@@ -1,0 +1,54 @@
+npm --version
+
+npm install -g @angular/cli
+ng new app              ------ if app not create then goto (cd C:\Users\Asus\AppData\Roaming\npm\node_modules\@angular\cli\node_modules\@schematics\angular) in power shell
+                                and us this command [ Set-ExecutionPolicy RemoteSigned ]
+cd app
+
+then go to  app/src/app/
+
+edit app.component.html:
+
+<h1>{{title}}</h1>
+<input type="text" #name placeholder ="Enter Your Name" name="Name"><br>
+<input type="text" #address placeholder ="Enter Your Address" name="Address"> <br>
+<input type="text" #contact placeholder="Enter Your Contact" name="Contact"> <br>
+<input type="email" #email placeholder="Enter Your Email" name="Email"> <br>
+<input type="password" #password placeholder="Enter Your Password" name="password"> <br>
+<button (click)="getValue(name.value, address.value, contact.value, email.value)"> Register </button>
+<h1> Your Registered Data</h1> <br>
+<p> Name:{{displayname}}</p> 
+<p> Address: {{displayaddress}}</p> 
+<p> Contact: {{displaycontact}}</p>
+<p> Email: {{displayemail}}</p>
+
+
+edit app.component.ts:
+
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'registration form';
+
+displayname=' ';
+displayaddress=' ';
+displaycontact=' ';
+displayemail=' ';
+
+getValue(name:string, address: string, contact:string, email:string) {
+this.displayname=name;
+this.displayaddress=address;
+this.displaycontact=contact; 
+this.displayemail=email;
+}
+}
+
+run the angular using following command in terminal :
+
+ng serve
+
+

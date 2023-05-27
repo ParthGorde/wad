@@ -1,0 +1,28 @@
+Create a directory name it assignment
+
+create docker file: name it dockerfile
+
+FROM node:alpine 
+COPY . /assb
+CMD node /assb/te.js
+
+
+
+create a te.js file:
+
+console.log("Name: Parth Gorde");
+console.log("Class: TEIT");
+console.log("Roll no: 25");
+console.log("College : MET");
+
+
+open the terminal in the vs code:
+
+docker --version
+
+docker build -t assb .
+
+docker images
+
+
+

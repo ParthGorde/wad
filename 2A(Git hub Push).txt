@@ -1,0 +1,21 @@
+
+1. Create a directory in vs code and create a file,
+2. Copy the link to the github repo,
+
+follow the following steps
+
+git init
+
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+
+git remote add origin https://github.com/your_name/your_repo.git
+
+git add .
+
+git commit -m "your commit message"
+
+git push -u origin master
+
+
+refresh github and see the files

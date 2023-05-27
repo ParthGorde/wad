@@ -1,0 +1,25 @@
+1st create aws account:
+
+sudo yum update -y
+
+sudo yum install -y httpd
+
+systemctl status httpd
+
+Default (scp -i "PEM file Key path" -r  "file/ folder path" ec2-user@ip-add:path of destination )
+
+scp  -i "C:\Users\Asus\Downloads\one.pem" -r "C:\Users\Asus\Desktop\Wad_Practicals\4B" ec2-user@52.66.236.147:/home/ec2-user
+
+
+change directory to the folder thats uploaded on cloud using Cd
+
+then use :
+
+sudo mv * /var/www/html/
+cd /var/www/html
+ls -lrt
+
+sudo service httpd start
+
+
+copy the public ip and paste it in the browser

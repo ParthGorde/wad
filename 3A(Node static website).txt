@@ -1,0 +1,37 @@
+create steps for node static web page:
+
+npm init
+___________________________________________
+create a index.js in the directory:
+add following code in it:
+___________________________________________
+const express = require('express');
+const app = express();
+const path = require('path');
+
+// Serve static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Start the server
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+________________________________________________
+
+
+create a folder named public: 
+ create a file index.html
+
+
+
+
+
+then open terminal and run index.js
+
+node index.js
+
+
+
+
+
