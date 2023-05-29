@@ -1,6 +1,7 @@
 create steps for node static web page:
 
 npm init
+npm install express --save
 ___________________________________________
 create a index.js in the directory:
 add following code in it:
